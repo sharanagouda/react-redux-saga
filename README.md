@@ -16,4 +16,4 @@ You will also see any lint errors in the console.
 
 ### `screenshot of demo`
 
-![plot](/Volumes/development/2021Apps/react-redux-saga/src/assets/demo.png)
+<img width="1032" alt="demo" src="https://user-images.githubusercontent.com/14965128/124344637-1f14f300-dbf1-11eb-97bf-662e8169a6cc.png">
