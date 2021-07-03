@@ -13,12 +13,23 @@ function App() {
   useEffect(() => {
     dispatch(getUsers());
   }, []);
+  const renderList=(user, i)=>(
+    <div className='rowC'>
+      <div>
+           <h4 key={i}>{user.name}</h4>
+      </div>
+      <div>
+           <h4 key={i}>{user.email}</h4>
+      </div>
+    </div>
+  );
+
   return (
     <div className="App">
-      <h1>Welcome to React Redux Saga Crash Course</h1>
+      <h1>React Redux Saga boilerplate with API call example</h1>
       {loading && <h2>Loading...</h2>}
       {error && !loading && <h2>{error}</h2>}
-      {users && users.map((user, i) => <h1 key={i}>{user.name}</h1>)}
+      {users && users.map((user, i) =>renderList(user, i))}
     </div>
   );
 }
